@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伸缩布局</title>
+	<style type="text/css">
+		div, ul, li { margin: 0; padding: 0; }
+		.wrap {
+			width: 400px;
+			height: 600px;
+			margin: 50px auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		header {
+			line-height: 50px;
+			background-color: blue;
+			text-align: center;
+		}
+		.main {
+			flex: 1;
+			display: flex;
+			text-align: center;
+		}
+		aside {
+			flex: 1;
+			background-color: yellow;
+		}
+		article {
+			flex: 2;
+			background-color: pink;
+		}
+
+		footer {
+			line-height: 50px;
+		}
+		footer ul {
+			list-style: none;
+			display: flex;
+		}
+		footer ul li {
+			background-color: green;
+			text-align: center;
+			flex: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header>头部</header>
+		<div class="main">
+			<aside>侧边栏</aside>
+			<article>正文</article>
+		</div>
+		<footer>
+			<ul>
+				<li>咨询</li>
+				<li>商品分类</li>
+				<li>我的订单</li>
+				<li>购物车</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>

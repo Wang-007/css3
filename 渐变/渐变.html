@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			margin: 10px;
+			text-align: center;
+			color: red;
+		}
+		.one {
+			width: 180px;
+			line-height: 180px;
+			border-radius: 50%;
+			background-color: blue;
+			background-image: radial-gradient(circle at 60px 60px, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+		}
+		.two {
+			width: 180px;
+			line-height: 60px;
+			border-radius: 5px;
+			background-color: green;
+			background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+		}
+		.three {
+			width: 180px;
+			line-height: 40px;
+			background-color: yellow;
+			background-image: linear-gradient(to right bottom,
+				              green 25%,
+				              transparent 25%,
+				              transparent 50%,
+				              green 50%,
+				              green 75%,
+				              transparent 75%,
+				              transparent 100%
+				);
+			background-size: 40px 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="one">径向渐变</div>
+	<div class="two">线性渐变</div>
+	<div class="three">进度条</div>
+</body>
+</html>

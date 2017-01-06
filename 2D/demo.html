@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        img {
+            transition: transform .5s;
+        }
+        .rotateImg {
+            transform: rotate(360deg);
+        }
+    </style>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('img').on('click', function() {
+            $(this).toggleClass('rotateImg');
+        });
+    });
+    </script>
+</head>
+<body>
+    <img src="zhuan.jpg">
+</body>
+</html>
